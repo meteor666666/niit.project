@@ -5,7 +5,7 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 import entity.Employee;
-
+//员工展示表
 public class EmployeeTableModel extends AbstractTableModel {
 
 	private List<Employee> list;

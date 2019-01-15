@@ -117,6 +117,7 @@ public class DepartmentDao extends BaseDao {
 			// + selectEmp.getAge() + " where id=" + selectEmp.getId();
 			// System.out.println(sql);
 			// int rs = stat.executeUpdate(sql);
+			//
 			String sql = "update department set name=? where id=?";
 			pstat = conn.prepareStatement(sql);
 			pstat.setString(1, dep.getName());

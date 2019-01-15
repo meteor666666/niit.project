@@ -23,7 +23,7 @@ import dao.EmployeeDao;
 import entity.Department;
 import entity.Employee;
 import util.CallBack;
-
+//Ãæ°åÖ÷Ìå
 public class EmployeeView {
 	List<Employee> list  = new ArrayList<>();
 	EmployeeDao empDao = new EmployeeDao();

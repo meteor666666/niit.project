@@ -20,7 +20,7 @@ import javax.swing.JTextField;
 import dao.ProjectDao;
 import entity.Project;
 import util.CallBack;
-
+//Ö÷Ãæ°å
 public class ProjectView {
 	List<Project> list = new ArrayList<>();
 	ProjectDao proDao = new ProjectDao();

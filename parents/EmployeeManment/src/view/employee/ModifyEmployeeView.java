@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import entity.Department;
 import entity.Employee;
 import util.CallBack;
-
+//ÐÞ¸Ä
 public class ModifyEmployeeView extends SuperEmployeeView {
 	CallBack callBack;
 	Employee selectEmp;

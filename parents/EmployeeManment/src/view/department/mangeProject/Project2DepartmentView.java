@@ -21,7 +21,7 @@ import javax.swing.JTable;
 import dao.Project2DepartmentDao;
 import entity.Department;
 import entity.Project;
-
+//部门项目子页，面板
 public class Project2DepartmentView {
 	List<Project> list = new ArrayList<>();
 	Project2DepartmentDao pro2depDao = new Project2DepartmentDao();

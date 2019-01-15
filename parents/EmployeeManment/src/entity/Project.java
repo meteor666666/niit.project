@@ -1,5 +1,5 @@
 package entity;
-
+//ÏîÄ¿
 public class Project {
 	private int id;
 	private String name;

@@ -21,7 +21,7 @@ import dao.DepartmentDao;
 import entity.Department;
 import util.CallBack;
 import view.department.mangeProject.Project2DepartmentView;
-
+//Ö÷ÌåÃæ°å
 public class DepartmentView {
 	List<Department> list = new ArrayList<>();
 	DepartmentDao depDao = new DepartmentDao();

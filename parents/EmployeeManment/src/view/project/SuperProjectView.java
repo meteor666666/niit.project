@@ -12,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+//ÑùÊ½¸¸Àà
 public class SuperProjectView {
 	JFrame frame;
 	JTextField nameText;

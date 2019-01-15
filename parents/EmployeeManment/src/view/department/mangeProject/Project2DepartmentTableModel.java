@@ -5,7 +5,7 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 import entity.Project;
-
+//部门管理项目页面，展示表格
 public class Project2DepartmentTableModel extends AbstractTableModel {
 
 	private List<Project> list;

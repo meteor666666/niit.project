@@ -9,7 +9,7 @@ import javax.swing.table.AbstractTableModel;
 import entity.Score;
 
 public class ScoreTableModel extends AbstractTableModel {
-
+//¼¨Ð§±í
 	private List<Score> list;
 	private Set<Score> saveSet = new HashSet<>();
 

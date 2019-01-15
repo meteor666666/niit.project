@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class BaseDao {
-
+	// 创建反射
 	public Connection getConnection() {
 		Connection conn = null;
 		// 2 利用反射，加载数据库驱动

@@ -14,7 +14,7 @@ import javax.swing.JTextField;
 import dao.DepartmentDao;
 import dao.EmployeeDao;
 import entity.Department;
-
+//ÑùÊ½¸¸Àà
 public class SuperEmployeeView {
 	JFrame frame;
 	JTextField nameText;

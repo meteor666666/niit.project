@@ -5,7 +5,7 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 import entity.Project;
-
+//Õ¹Ê¾±í
 public class ProjectTableModel extends AbstractTableModel {
 
 	private List<Project> list;

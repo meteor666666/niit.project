@@ -1,5 +1,5 @@
 package view.score;
-
+//主面板
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -21,7 +22,10 @@ import javax.swing.JTextField;
 import dao.DepartmentDao;
 import dao.ScoreDao;
 import entity.Department;
+import entity.Project;
 import entity.Score;
+import util.CallBack;
+import view.project.ModifyProjectView;
 
 public class ScoreView {
 	List<Score> list = new ArrayList<>();
@@ -100,6 +104,10 @@ public class ScoreView {
 
 				}
 				Score sc = new Score();
+				
+				sc.setName(name);
+				sc.setSex(sex);
+				sc.setAge(age);
 
 				Department dep = new Department();
 				int index = depBox.getSelectedIndex();
@@ -108,9 +116,9 @@ public class ScoreView {
 				} else {
 					dep = depList.get(index - 1);
 				}
-				// sc.setDep(dep);
-				// list = scDao.searchByCondition(sc);
-				// refreshTable(list);
+				 sc.setDep(dep);
+				 list = scDao.search();
+				 refreshTable();
 			}
 		});
 		panel1.add(searchBtn);
@@ -137,7 +145,36 @@ public class ScoreView {
 				refreshTable();
 			}
 		});
+		
+		JButton modifyBtn = new JButton();
+		modifyBtn.setText("修改");
+		modifyBtn.setPreferredSize(new Dimension(80, 30));
+		panel3.add(modifyBtn);
+		/*
+		modifyBtn.addActionListener(new ActionListener() {
 
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				int index = table.getSelectedRow();
+				if (index > -1) {
+
+					Score selectEmp = list.get(index);
+					
+					new ModifyScoreView(selectEmp, new CallBack() {
+
+						@Override
+						public void call() {
+							table.updateUI();
+						}
+					}).init();
+				} else {
+					JOptionPane.showMessageDialog(null, "请选中一条数据");
+
+				}
+			}
+		});
+		*/
+		
 		frame.setVisible(true);
 
 	}

@@ -14,6 +14,7 @@ import view.employee.EmployeeView;
 import view.project.ProjectView;
 import view.score.ScoreView;
 
+//Èë¿Ú
 public class MainView {
 
 	public void init() {

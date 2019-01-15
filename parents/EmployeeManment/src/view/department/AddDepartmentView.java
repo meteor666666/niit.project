@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import dao.DepartmentDao;
 import entity.Department;
 import util.CallBack;
-
+//Ôö¼Ó
 public class AddDepartmentView extends SuperDepartmentView {
 
 	CallBack callBack;

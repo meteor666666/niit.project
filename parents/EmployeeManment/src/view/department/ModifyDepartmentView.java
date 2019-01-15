@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 import dao.DepartmentDao;
 import entity.Department;
 import util.CallBack;
-
+//ÐÞ¸Ä
 public class ModifyDepartmentView extends SuperDepartmentView {
 	CallBack callBack;
 	Department selectEmp;
